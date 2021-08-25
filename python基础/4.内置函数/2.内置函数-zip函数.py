@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: iso-8859-15 -*-
+# -*- coding: utf-8 -*-
 
 # zip() 函数
 
@@ -11,10 +11,10 @@ zip()
 '''
 
 var1 = '1234'
-var2 = ['a','b','c']
-var3 = ('A','B','C','D')
+var2 = ['a', 'b', 'c']
+var3 = ('A', 'B', 'C', 'D')
 # 调用zip函数，组成新的元组迭代器
-res = zip(var1,var2,var3)
+res = zip(var1, var2, var3)
 # print(res,type(res))
 
 # 提取迭代器数据的方法， next(),list(),for i in ...
@@ -53,9 +53,9 @@ y = [4, 5, 6]
 zipped = zip(x, y)
 print(list(zipped))
 
-print(zip(x, y)) # 迭代器对象，
-print(*zip(x, y))# 组合好的多个元组数据
+print(zip(x, y))  # 迭代器对象，
+print(*zip(x, y))  # 组合好的多个元组数据
 
 x2, y2 = zip(*zip(x, y))
-print(x2,y2)
+print(x2, y2)
 # (1, 2, 3) (4, 5, 6)

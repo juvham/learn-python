@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: iso-8859-15 -*-
+# -*- coding: utf-8 -*-
 
 # 高阶函数-reduce()
 
@@ -18,7 +18,7 @@ reduce(func,iterable)
 
 from functools import reduce
 
-### (1) [5,2,1,1] ==> 5211
+# (1) [5,2,1,1] ==> 5211
 
 # 普通方法
 # varlist = [5,2,1,1]
@@ -46,20 +46,17 @@ from functools import reduce
 #  要求不能使用int方法进行类型的转换时，如何解决上面的问题
 
 # 定义函数，给定一个字符串的数字，返回一个整型的数字
+
+
 def myfunc(s):
-    vardict = {'0':0,'1':1,'2':2,'3':3,'4':4,'5':5,'6':6,'7':7,'8':8,'9':9}
+    vardict = {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4,
+               '5': 5, '6': 6, '7': 7, '8': 8, '9': 9}
     return vardict[s]
 
+
 # 1.先使用 map函数，把数字字符串，转为整型的数字
-iter1 = map(myfunc,'456')
+iter1 = map(myfunc, '456')
 
 # 2. 把数字列表中的值，使用lambda进行二次处理
-iter2 = reduce(lambda x,y:x*10+y,iter1)
+iter2 = reduce(lambda x, y: x*10+y, iter1)
 print(iter2)
-
-
-
-
-
-
-

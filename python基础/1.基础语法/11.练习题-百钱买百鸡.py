@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: iso-8859-15 -*-
+# -*- coding: utf-8 -*-
 
 # 百钱买百鸡
 '''
@@ -25,8 +25,8 @@
 # 优化版
 count = 0
 num = 1
-for gj in range(1,34):
-    for mj in range(1,101):
+for gj in range(1, 34):
+    for mj in range(1, 101):
         xj = 100 - gj - mj
         count += 1
         # 判断是否为100只，是否花费100元
@@ -35,5 +35,3 @@ for gj in range(1,34):
             num += 1
 print(num)
 print(count)
-
-

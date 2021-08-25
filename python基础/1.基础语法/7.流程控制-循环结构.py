@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: iso-8859-15 -*-
+# -*- coding: utf-8 -*-
 
 # 循环结构
 
@@ -13,7 +13,6 @@
 #     num += 1   # 更改变量，目的主要为来继续进行下一步，并且朝着循环结束的方向发展
 
 # print(num)
-
 
 
 #  for 循环 通常 for循环用来遍历一个容器类型的数据
@@ -41,7 +40,7 @@ while num < 10:
     num += 1
     # 判断当前的num 是否为偶数
     if num % 2 == 0:
-        continue # 跳过本次循环，继续执行下一次
+        continue  # 跳过本次循环，继续执行下一次
     else:
         print(num)
 
@@ -56,7 +55,6 @@ print('abc')
 # 1.exit()
 # 2.quit()
 # 是用于结束当前python解释器程序的，而break和continue是用来控制程序的
-
 
 
 # 作业练习

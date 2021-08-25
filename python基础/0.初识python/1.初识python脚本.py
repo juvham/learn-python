@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: iso-8859-15 -*-
+# -*- coding: utf-8 -*-
 
 
 # 脚本中的 # 就是一个注释，作用：说明，解释，调试
@@ -45,6 +45,3 @@ a = 10
 爱 = 'iloveyou'
 
 print(爱)
-
-
-

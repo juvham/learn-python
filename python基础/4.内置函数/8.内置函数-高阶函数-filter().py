@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: iso-8859-15 -*-
+# -*- coding: utf-8 -*-
 
 # filter() 过滤器
 
@@ -14,7 +14,7 @@ filter(func,iterable)
 '''
 
 # 要求 保留所有的偶数，丢弃所有的奇数
-varlist = [1,2,3,4,5,6,7,8,9]
+varlist = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 # 普通方法实现
 # newlist = []
@@ -37,8 +37,5 @@ varlist = [1,2,3,4,5,6,7,8,9]
 # print(it,list(it))
 
 # 优化版
-it = filter(lambda n:True if n % 2 == 0 else False,varlist)
-print(it,list(it))
-
-
-
+it = filter(lambda n: True if n % 2 == 0 else False, varlist)
+print(it, list(it))
