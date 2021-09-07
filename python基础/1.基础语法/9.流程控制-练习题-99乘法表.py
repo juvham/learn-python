@@ -8,7 +8,7 @@ for x in range(1,10):
     # 第二层循环，内循环
     # 内循环负责当前行的列数 第一行 1列  2行 2列 。。。 9行 9列
     for y in range(1,x+1):
-        print(f'{x}x{y}={x*y}',end=" ")
+        print(f'{x}x{y}={x*y}', end=" ")
     # 控制换行
     print()
 # 作业一，使用while循环实现九九乘法表
